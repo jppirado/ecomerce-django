@@ -1,0 +1,7 @@
+<form method="post" id="form" name="form" action="add/">
+    {%csrf_token%}
+    {{data.as_p}}
+    <button type="submit">enviar</button>
+</form>
+
+<a href="/produto/listar">Ver produtos</a>

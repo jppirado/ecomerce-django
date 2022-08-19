@@ -1,0 +1,15 @@
+<h1>Relatorio</h1>
+<table>
+    <thead>
+        <th>Produto</th>
+        <th>Fornecedor</th>
+        <th>Quantidade</th>
+    </thead> 
+    {% for db in produtos %}
+    <tbody>
+        <td>{{ db.name_product }}</td>
+        <td>{{db.fornecedor}}</td>
+        <td>{{db.quantity_product}}</td>
+    </tbody>    
+    {% endfor %}
+</table>    

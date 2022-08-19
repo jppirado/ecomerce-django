@@ -1,0 +1,10 @@
+<h1>Listar</h1>
+{% for sp  in object_list  %}
+
+<p>{{sp.name_suplier}}, 
+    <a href="/{{sp.id}}/delete">Deletar</a>
+    <a href="/{{sp.id}}/edit">Edit</a>
+
+</p>
+
+{% endfor%}
